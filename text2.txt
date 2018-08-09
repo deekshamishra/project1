@@ -1,0 +1,2 @@
+hii this is text file named text2.
+the version of this file will be version2.
