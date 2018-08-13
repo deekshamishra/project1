@@ -1,0 +1,50 @@
+Question:1
+year = int(input("Enter a year: "))
+
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
+Question:2
+Length = int(input("Enter Length: "))
+Breadth = int(input("Enter Breadth: "))
+if (Length == Breadth):
+    print("It's a square")
+else:
+    print("It's a rectange")
+Question:3
+a1 = int(input("Enter Age of first person: "))
+b1 = int(input("Enter Age of second person: "))
+c1 = int(input("Enter Age of third person: "))
+#finding the oldest one
+if a1>b1 & a1>c1:
+    print("The oldest age is %d", a1)
+elif b1>a1 & b1>c1:
+    print("The oldest age is %d", b1)
+else:
+    print("The oldest age is %d", c1)
+#finding the youngest one
+if a1<b1 & a1<c1:
+    print("The youngest age is %d", a1)
+elif b1<a1 & b1<c1:
+    print("The youngest age is %d", b1)
+else:
+    print("The youngest age is %d", c1)    
+Question4:
+point=int (input("Enter the points you have:"))
+if point>=181 & point<=200:
+    print("Congratulations! You won chocolates")
+elif point>=151 & point<=180:
+    print("Congratulations! You won a Book")
+elif point>=51 & point<=150:
+    print("Congratulations! You won a Wooden Dog")    
+elif point>=1 & point<=50:
+    print("No prize this time")
+else:
+    print("Envalid point entred because points limits exceeded")            
