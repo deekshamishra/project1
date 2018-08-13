@@ -1,0 +1,67 @@
+QUESTION:1
+our_list = [] # create empty list
+ 
+first_num = int(input('Enter first number: '))
+second_num = int(input('Enter second number: '))
+third_num = int(input('Enter third number: '))
+ 
+our_list.append(first_num)
+our_list.append(second_num)
+our_list.append(third_num)
+
+print(our_list)
+QUESTION:2
+our_list = [] # create empty list
+ 
+first_num = int(input('Enter first number: '))
+second_num = int(input('Enter second number: '))
+third_num = int(input('Enter third number: '))
+ 
+our_list.append(first_num)
+our_list.append(second_num)
+our_list.append(third_num)
+
+print(our_list)
+
+given_list = ['google','apple','facebook','microsoft','tesla']
+print(our_list + given_list)
+QUESTION:3
+list= [1,2,5,4,5,6,5,2,1,5,4,6]
+print(list)
+print(list.count(5))
+QUESTION:4
+list= [1,2,5,4,5,6,5,2,1,5,4,6]
+print("list entered")
+print(list)
+list.sort()
+print("sorted list")
+print(list)
+QUESTION:5
+list1= [1,2,5,4,5,6,5,2,1,5,4,6]
+list2= [7,8,9,6,4,8,2,1,7,2,2,4]
+list1.sort()
+list2.sort()
+print("given 2 sorted lists are")
+print(list1)
+print(list2)
+list3= list1 + list2
+print("sorted combined list")
+list3.sort()
+print(list3)
+QUESTION:6
+print("LIFO operation on list")
+pylist=[1,2,3,4,5]
+print("adding new value at the last")
+pylist.append(5)
+print(pylist)
+print("removing first value")
+pylist.remove(1)
+print(pylist)
+print("FIFO operation on list")
+pylist1=[1,2,3,4]
+print("adding new value to the first")
+pylist1.insert(0,0)
+print(pylist1)
+print("removing first value")
+pylist1.remove(0)
+print(pylist1)
