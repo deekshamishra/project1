@@ -1,0 +1,51 @@
+Question:1:What is Time Tuple?
+
+Question:2:Write a program to get formatted time.
+import datetime
+import time
+import os
+print(time.strftime("%H:%M:%S"))
+
+Question:3:Extract month from the time.
+import datetime
+a= "2018-08-18"
+d=datetime.datetime.strptime(a,"%Y-%m-%d")
+print(d.month)
+
+Question:4:Extract day from the time.
+import datetime
+n = datetime.datetime.now()
+print (n.strftime("%A"))
+
+Question:5:Extract date (ex : 11 in 11/01/2021) from the time.
+import datetime
+date_today=datetime.date.today()
+print (date_today.day)
+
+Question:6:Write a program to print time using localtime method.
+import datetime 
+import time
+time.localtime()
+print(datetime.datetime.time(datetime.datetime.now()))
+
+Question:7:Find the factorial of a number input by user using math package functions.
+import math
+num=int(input("Enter any number: "))
+print(math.factorial(num))
+
+Question:8:Find the GCD of a number input by user using math package functions.
+import math
+first_num=int(input("Enter first num: "))
+second_num=int(input("Enter second num: "))
+print("GCD is: ",math.gcd(first_num, second_num))
+
+Question:9:Use OS package and do the following tasks: 
+1. Get current working directory.
+2. Get the user environment.
+>>>import os
+>>>os.getcwd()
+				 
+'C:\\Python\\Python37'
+>>> os.environ
+				 
+environ({'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\user\\AppData\\Roaming', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'COMPUTERNAME': 'DESKTOP-4PRH9TQ', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOME': 'C:\\Users\\user', 'HOMEDRIVE': 'C:', 'HOMEPATH': '\\Users\\user', 'LOCALAPPDATA': 'C:\\Users\\user\\AppData\\Local', 'LOGONSERVER': '\\\\DESKTOP-4PRH9TQ', 'NUMBER_OF_PROCESSORS': '4', 'ONEDRIVE': 'C:\\Users\\user\\OneDrive', 'OS': 'Windows_NT', 'PATH': 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Python\\Python37;C:\\Program Files\\Git\\cmd;C:\\Python\\Python37\\Scripts\\;C:\\Python\\Python37\\;C:\\Users\\user\\AppData\\Local\\Microsoft\\WindowsApps;', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_REVISION': '4e03', 'PROGRAMDATA': 'C:\\ProgramData', 'PROGRAMFILES': 'C:\\Program Files', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'PROGRAMW6432': 'C:\\Program Files', 'PSMODULEPATH': 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\', 'PUBLIC': 'C:\\Users\\Public', 'SESSIONNAME': 'Console', 'SYSTEMDRIVE': 'C:', 'SYSTEMROOT': 'C:\\WINDOWS', 'TEMP': 'C:\\Users\\user\\AppData\\Local\\Temp', 'TMP': 'C:\\Users\\user\\AppData\\Local\\Temp', 'USERDOMAIN': 'DESKTOP-4PRH9TQ', 'USERDOMAIN_ROAMINGPROFILE': 'DESKTOP-4PRH9TQ', 'USERNAME': 'user', 'USERPROFILE': 'C:\\Users\\user', 'VBOX_MSI_INSTALL_PATH': 'C:\\Program Files\\Oracle\\VirtualBox\\', 'WINDIR': 'C:\\WINDOWS'})
