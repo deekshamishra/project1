@@ -1,0 +1,84 @@
+Question:1:Create a circle class and initialize it with radius. Make two methods getArea and getCircumference inside this class.
+class circle:
+    def __init__(self):
+        self.radius=int(input("Enter the radius: "))
+    def getArea(self):
+        self.area= 3.14*self.radius*self.radius
+        print("Area of circle is: ",self.area)   
+    def getCircumfrence(self):
+        self.circmfrence= 2*3.14*self.radius
+        print("Circumfrence of circle is: ",self.circmfrence)   
+obj=circle()
+obj.getArea()
+obj.getCircumfrence()      
+
+Question:2:Create a Student class and initialize it with name and roll number. Make methods to :
+1. Display - It should display all informations of the student.
+class Student:
+    def __init__(self,name,roll):
+        self.name=name
+        self.roll=roll
+    def display(self):
+        print("Name: ",self.name)
+        print("Roll: ",self.roll)    
+obj=Student("Deeksha",15)
+obj.display()
+obj=Student("Deepak",25)
+obj.display()        
+
+Question:3:Create a Temprature class. Make two methods :
+1. convertFahrenheit - It will take celsius and will print it into Fahrenheit.
+2. convertCelsius - It will take Fahrenheit and will convert it into Celsius.
+class Temperature:
+    def __init__(self):
+        self.Fahrenheit=int(input("Enter temp in fahrenheit: "))
+        self.Celsius=int(input("Enter temp in celsius: "))
+    def convertFahrenheit(self):
+        self.F=  (self.Celsius * 9/5) + 32
+        print("Temp in °F is: ",self.F)  
+    def convertCelsius(self):
+        self.C=   (self.Fahrenheit - 32) * 5/9 
+        print("Temp in °C is: ",self.C) 
+obj=Temperature()
+obj.convertFahrenheit()
+obj.convertCelsius()        
+
+Question:4:Create a class MovieDetails and initialize it with Movie name, artistname,Year of release and ratings .
+Make methods to 
+1. Display-Display the details.
+2. Update- Update the movie details.
+class MovieDetails:
+    def __init__(self,movie_name,artist_name,year_of_release,ratings):
+        self.m_name=movie_name
+        self.a_anme=artist_name
+        self.y_release=year_of_release
+        self.rating=ratings
+    def Display(self):
+        print("Name of movie: ",self.m_name)
+        print("Name of artist: ",self.a_anme)
+        print("Year of relaese: ",self.y_release)
+        print("Ratings: ",self.rating)
+obj=MovieDetails("DDLJ","SRK",1996,5)  
+obj.Display()          
+
+
+Question:5:Create a class Expenditure and initialize it with expenditure,savings.Make the following methods. 
+1. Display expenditure and savings 
+2. Calculate total salary
+3. Display salary
+class Expenditure:
+    def __init__(self):
+        self.exp=int(input("Enter expenditure: "))
+        self.saving=int(input("Enter savings: "))
+    def dis_exp_sav(self):
+        print("The expenditure is: ",self.exp)
+        print("The savings are: ",self.saving)    
+    def total_sal(self):
+        self.sal= self.exp + self.saving
+    def dis_sal(self):
+        print("The salary is: ",self.sal)  
+obj=Expenditure()
+obj.dis_exp_sav()
+obj.total_sal()
+obj.dis_sal()             
+
