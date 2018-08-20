@@ -1,0 +1,92 @@
+Question:1: Create a class Animal as a base class and define method animal_attribute. Create another class Tiger which is inheriting Animal and access the base class method.
+class Animal:
+    def animal_attribute(self):
+        print("I'm method of base class.")
+class Tiger(Animal):
+    def tiger_attribute(self):
+        print("I'm method of base class.")
+obj=Tiger()
+obj.animal_attribute()
+obj.tiger_attribute() 
+
+Question:2:What will be the output of following code.
+class A:
+    def f(self):
+        return self.g()
+
+    def g(self):
+        return 'A'
+
+class B(A):
+    def g(self):
+        return 'B'
+
+a = A()
+b = B()
+print a.f(), b.f()
+print a.g(), b.g()
+Output: A B
+A B
+
+Question:3:Create a class Cop. Initialize its name, age , work experience and designation. Define methods to add, display and update the following details. Create another class Mission which extends the class Cop. Define method add_mission _details. Select an object of Cop and access methods of base class to get information for a particular cop and make it available for mission.
+class Cop:
+    def __init__(self):
+        name=""
+        work=""
+        experience=1
+        designation=""
+    
+    def add(self,nme,wrk,exp,design):
+        self.name=nme
+        self.work=wrk
+        self.experience=exp
+        self.designation=design
+
+    def display(self):
+        print("Name: ",self.name)
+        print("Work: ",self.work)
+        print("Experience: ",self.experience)
+        print("Designation: ",self.designation)
+
+    def update(self,nme,wrk,exp,design):
+        self.name=nme
+        self.work=wrk
+        self.experience=exp
+        self.designation=design
+
+
+class Mission(Cop):
+    def add_mission_details(self,mission_no):
+        print("Mission: ",mission_no)
+m=Mission()
+m.add("Deeksha","Student",15,"ISP")
+m.display()
+m.add_mission_details("ISP 10")  
+print("After updation...!")
+m.update("Deepak","Student",25,"ISP")
+m.display()
+m.add_mission_details("ISP 11")     
+
+Question:4:Create a class Shape.Initialize it with length and breadth Create the method Area. Create class rectangle and square which inherits shape and access the method Area.
+class Shape:
+    length=int()
+    breadth=int() 
+    def area (self,len,brdth):
+        self.length=len
+        self.breadth=brdth
+        return (self.length * self.breadth)
+class Rectange(Shape):
+    def rect_display_area(self):
+        rect_len=int(input("Enter length of rectangle: "))
+        rect_brdth=int(input("Enter breadth of rectangle: ")) 
+        print("Area of react. :",self.area(rect_len,rect_brdth)) 
+
+class Square(Shape):
+    def square_display_area(self):
+        side=int(input("Enter length of side of square: "))
+        print("Area of Square: ",self.area(side,side))
+
+rect_obj=Rectange()
+rect_obj.rect_display_area()
+squ_obj=Square()
+squ_obj.square_display_area()
