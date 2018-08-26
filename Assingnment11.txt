@@ -1,0 +1,21 @@
+Question:1:What is an access token? Generate your access token for any API.(for example Twitter,Spotify etc).
+The Access Token is a credential that can be used by an application to access an API.The Access Token should be used as a Bearer credential and transmitted in an HTTP Authorization header to the API.Auth0 currently generates Access Tokens in two formats: as opaque strings or as JSON Web Tokens (JWTs).
+AIzaSyAcIkvKXRb263PXHfczhY2VN2LEFs89qNk
+
+
+Question:2:Get the IP address of some common sites like Google, Facebook by using DNS lookup.
+google.com	172.217.7.206
+Google Inc. (AS15169)	5 min
+facebook.com	31.13.71.36
+Facebook, Inc. (AS32934)	5 min
+instagram.com	34.202.100.20
+Amazon.com, Inc. (AS14618)	60 sec
+
+Question:3:Using Tweepy library try to extract tweets from Twitter.
+
+
+Question:4:What is a difference between library and API . Figure it out with examples.
+A library is a collection of reusable components of code.
+An API, or application program interface, is a contract for reuse that is published by a library, service, framework, system or application.
+A library is a chunk of code designed for reuse that is typically installed locally. A library is most often wrapped in an API that defines the functionality the library provides and how to use it.
+Technically speaking, the term API refers to an interface that doesn't need to have an implementation. However, when people speak of an API they are usually referring to a reusable library or service. Where a library is used as a package of code, a service is a running system that provides functionality to other systems and applications.
