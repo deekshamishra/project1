@@ -1,0 +1,68 @@
+Question:1:-Create a dict with name and mobile number.Define a GUI interface using tkinter and pack the label and create a scrollbar to scroll the list of keys in the dictionary.
+from tkinter import *
+root=Tk()
+root.geometry("300x200")
+root.title("GUI-2-Que-1")
+
+dict={ "deeksha":1234567891,"ananny":2345678912,"rekha":3456789123,"manish":4567891234,"Jeet":5678912345,"tanu":5678912348,"yash":8974561234 }
+
+f1=Frame(root,height=50,width=20,bg="steel blue")
+f1.pack(side=TOP)
+
+sb=Scrollbar(f1)
+sb.pack(side=RIGHT,fill=Y)
+
+mylist=Listbox(f1,yscrollcommand=sb.set)
+
+for line in dict:
+    mylist.insert(END,line)
+
+mylist.pack(side=LEFT,fill=X)
+sb.configure(command=mylist.yview)
+
+root.mainloop()
+
+Question:2:In the same tkinter file as created above, create a function to insert items into the dictionary.
+from tkinter import *
+root=Tk()
+root.geometry("700x1000")
+root.title("GUI-2-Que-1")
+
+dict={ "deeksha":1234567891,"ananny":2345678912,"rekha":3456789123,"manish":4567891234,"Jeet":5678912345,"tanu":5678912348,"yash":8974561234 }
+
+f1=Frame(root,height=50,width=20,bg="steel blue")
+f1.pack(side=TOP)
+
+sb=Scrollbar(f1)
+sb.pack(side=RIGHT,fill=Y)
+
+mylist=Listbox(f1,yscrollcommand=sb.set)
+
+for line in dict:
+    mylist.insert(END,line)
+
+mylist.pack(side=LEFT,fill=X)
+sb.configure(command=mylist.yview)
+
+def add_value():
+    dict[k.get()]=v.get()
+    mylist.insert(END,k.get())
+
+f2=Frame(root)
+f2.pack()
+lable1=Label(f2,text="NAME: ")
+lable1.grid(row=0,column=0)
+lable2=Label(f2,text="MOBILE NUMBER: ")
+lable2.grid(row=1,column=0)
+
+
+k=Entry(f2)
+k.grid(row=0,column=1)
+v=Entry(f2)
+v.grid(row=1,column=1)
+
+btn=Button(f2,text="ADD VALUES",command=add_value)
+btn.grid(row=2,column=1)
+
+
+root.mainloop()
